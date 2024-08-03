@@ -1,0 +1,10 @@
+### Get exchange rates forced
+GET {{host}}/v1/exchange-rates/USD?force=true
+
+> {%
+  client.test("should execute successfully", () => client.assert(response.status === 200));
+  client.test("should have base USD", () => client.assert(response.body.base === "USD"));
+  client.test("should have date", () => client.assert(response.body.date.length > 0));
+  client.test("should have rates", () => client.assert(Object.keys(response.body.rates).length > 0));
+  client.test("should have source", () => client.assert(response.body.source.length > 0));
+%}

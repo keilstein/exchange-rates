@@ -1,0 +1,10 @@
+### Get exchange rates filtered
+GET {{host}}/v1/exchange-rates/USD?targets=EUR,GBP,CHF
+
+> {%
+  client.test("should execute successfully", () => client.assert(response.status === 200));
+  client.test("should have base USD", () => client.assert(response.body.base === "USD"));
+  client.test("should have date", () => client.assert(response.body.date.length > 0));
+  client.test("should have 3 rates", () => client.assert(Object.keys(response.body.rates).length === 3));
+  client.test("should have source", () => client.assert(response.body.source.length > 0));
+%}

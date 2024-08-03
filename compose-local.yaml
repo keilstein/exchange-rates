@@ -1,0 +1,11 @@
+services:
+  exchange-rates:
+    image: exchange-rates
+    container_name: exchange-rates
+    build:
+      context: ./
+      dockerfile: ./ops/docker/Dockerfile
+    ports:
+      - "8081:8081"
+    environment:
+      - "SPRING_PROFILES_ACTIVE=local"

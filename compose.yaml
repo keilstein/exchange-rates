@@ -1,0 +1,9 @@
+services:
+  exchange-rates:
+    image: exchange-rates
+    container_name: exchange-rates
+    build:
+      context: ./
+      dockerfile: ./ops/docker/Dockerfile
+    ports:
+      - "8080:8080"

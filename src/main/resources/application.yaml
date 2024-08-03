@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: exchange-rates
+
+fx-rates:
+  url: https://api.fxratesapi.com
+
+# https://en.wikipedia.org/wiki/Template:Most_traded_currencies
+currency:
+  hot:
+    currencies: USD, EUR, JPY, GBP, CNY, AUD, CAD, CHF, HKD, SGD
+    refresh-rate-before-business-hours: "0 0 0-6 * * MON-FRI" # Every hour
+    refresh-rate-during-business-hours: "0 * 7-21 * * MON-FRI" # Every minute
+    refresh-rate-after-business-hours: "0 0 21-23 * * MON-FRI" # Every hour
+    refresh-rate-during-weekends: "0 0 * * * SAT-SUN"  # Every hour
+  warm:
+    currencies: SEK, KRW, NOK, NZD, INR, MXN, TWD, ZAR, BRL, DKK, PLN, THB, ILS, IDR, CZK, AED, TRY, HUF, CLP, SAR, PHP, MYR, COP, RUB, RON, PEN, BHD, BGN, ARS
+    refresh-rate-during-business-hours: "0 0 7-21 * * MON-FRI" # Every hour
+    refresh-rate-during-weekends: "0 0 8 * * SAT-SUN"  # At 08:00 AM

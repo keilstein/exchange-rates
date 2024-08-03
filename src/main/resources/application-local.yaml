@@ -1,0 +1,9 @@
+server:
+  port: 8081
+currency:
+  hot:
+    currencies: USD, EUR, JPY, GBP, CNY
+    refresh-rate-before-business-hours: "*/30 * 0-6 * * MON-FRI" # Every 30 seconds
+    refresh-rate-during-business-hours: "*/30 * 7-21 * * MON-FRI" # Every 30 seconds
+    refresh-rate-after-business-hours: "*/30 * 21-23 * * MON-FRI" # Every 30 seconds
+    refresh-rate-during-weekends: "*/30 * * * * SAT-SUN"  # Every 30 seconds
