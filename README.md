@@ -103,14 +103,14 @@ port 8081 of localhost, i.e. **localhost:8081**.
 
 #### IDE
 
-Download and install your favourite IDE. Recommended IDE for this project is **IntelliJ IDEA Ultimate**.
+Download and install your favourite IDE. Recommended IDE for this project is **IntelliJ IDEA**.
 
-| IDE                                                                        | Details                                                                                                                                                                                                                                                  |
-|:---------------------------------------------------------------------------|:---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [IntelliJ IDEA Community Edition](https://www.jetbrains.com/idea/download) | _A free IDE built on open-source code that provides essential features for Java and Kotlin enthusiasts._ See also [IntelliJ IDEA Ultimate vs IntelliJ IDEA Community Edition](https://www.jetbrains.com/products/compare/?product=idea&product=idea-ce). |
-| [IntelliJ IDEA Ultimate](https://www.jetbrains.com/idea/download)          | There is 30 days of trial period. Check [Subscription Options and Pricing](https://www.jetbrains.com/idea/buy).                                                                                                                                          |
-| [Visual Studio Code](https://code.visualstudio.com)                        | _Free. Built on open source. Runs everywhere._                                                                                                                                                                                                           |
-| [Eclipse](https://www.eclipse.org/downloads)                               | _The Leading Open Platform for Professional Developers_                                                                                                                                                                                                  |
+| IDE                                                                        | Details                                                                                                                                                                                                                                                          |
+|:---------------------------------------------------------------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [IntelliJ IDEA Community Edition](https://www.jetbrains.com/idea/download) | _A free IDE built on open-source code that provides essential features for Java and Kotlin enthusiasts._                                                                                                                                                         |
+| [IntelliJ IDEA Ultimate](https://www.jetbrains.com/idea/download)          | There is 30 days of trial period. Check [Subscription Options and Pricing](https://www.jetbrains.com/idea/buy). See also [IntelliJ IDEA Ultimate vs IntelliJ IDEA Community Edition](https://www.jetbrains.com/products/compare/?product=idea&product=idea-ce).  |
+| [Visual Studio Code](https://code.visualstudio.com)                        | _Free. Built on open source. Runs everywhere._                                                                                                                                                                                                                   |
+| [Eclipse](https://www.eclipse.org/downloads)                               | _The Leading Open Platform for Professional Developers_                                                                                                                                                                                                          |
 
 #### Docker
 
